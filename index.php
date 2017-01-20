@@ -1,5 +1,10 @@
 <html>
-<title>Tennis</title>
+<title>
+<?php 
+$u = $_SERVER['REQUEST_URI']; 
+echo substr($u, 1, -1);
+?>
+</title>
 <head>
 
 <script src="jquery.min.js"></script>
